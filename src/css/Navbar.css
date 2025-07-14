@@ -1,0 +1,47 @@
+#icon {
+    position: relative;
+    left: 35px;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    margin-right: 80px;
+}
+
+.navbar-input {
+    width: 35%;
+    outline: none;
+    font-size: 15px;
+    padding-left: 45px;
+    border-radius: 18px;
+    border: '1px solid #ccc';
+    height: '40px';
+}
+
+.cart-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 150px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.number-of-products {
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-left: -10px;
+}
