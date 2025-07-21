@@ -33,7 +33,6 @@ function DeleteModal() {
           onClick={() => {
             cancelDelete();
           }}
-          style={{}}
         >
           HAYIR
         </Button>
