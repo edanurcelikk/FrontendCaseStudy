@@ -1,0 +1,10 @@
+.navbar-input {
+  width: 30%;
+  outline: none;
+  font-size: 15px;
+  padding-left: 45px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  height: 40px;
+  background-color: rgba(236, 236, 236, 255);
+}

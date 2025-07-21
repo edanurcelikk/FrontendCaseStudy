@@ -1,0 +1,10 @@
+.rate {
+  position: relative;
+  bottom: 35px;
+  left: 90px;
+  color: red;
+}
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+}

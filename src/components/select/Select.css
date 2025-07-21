@@ -1,0 +1,11 @@
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+.select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+  font-size: 14px;
+}

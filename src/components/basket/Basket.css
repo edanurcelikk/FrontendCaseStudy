@@ -1,0 +1,62 @@
+.cart-btn {
+  border-radius: "6px";
+  border: 1px solid #ccc;
+}
+
+.cart-menu {
+  /* width: 400px; */
+  /* height: 400px;
+  width: 25%; */
+  width: 25vw;
+  height: 50vh;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 1000;
+  position: absolute;
+  right: 205px;
+  top: 113px;
+  background-color: white;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .cart-menu {
+    right: 35px;
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cart-menu {
+    right: 0px;
+    width: 40vw;
+  }
+}
+
+.empty-card {
+  margin-left: 15px;
+}
+.cart {
+  width: 90%;
+  height: 100px;
+  padding: 8px;
+  overflow: hidden;
+}
+.card-title {
+  position: relative;
+  left: 90px;
+  bottom: 90px;
+  width: max-content;
+}
+.request-btn {
+  width: 70px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid orange;
+  color: orange;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  left: 90px;
+  bottom: 90px;
+}

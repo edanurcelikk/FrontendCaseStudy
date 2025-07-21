@@ -1,0 +1,111 @@
+.products-container {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  justify-content: flex-start;
+}
+
+.pagination {
+  width: max-content;
+  margin-left: 200px;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 600px;
+  border-radius: 10px;
+}
+.base-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.base-card,
+.product-hover-card {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.base-card {
+  z-index: 1;
+  opacity: 1;
+}
+
+.product-hover-card {
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-card:hover .base-card {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-card:hover .product-hover-card {
+  opacity: 1;
+  pointer-events: auto;
+}
+.addtocart-btn {
+  background-color: #ff6000;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  /* ortalamak için */
+  display: block;
+  margin: 110px auto 0 auto;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+}
+.search-container {
+  width: max-content;
+}
+
+.no-product {
+  position: relative;
+  bottom: 630px;
+  left: 300px;
+  width: max-content;
+}
+.select-container {
+  position: relative;
+  left: 630px;
+  bottom: 10px;
+  width: max-content;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .select-container {
+    left: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .select-container {
+    left: 300px;
+  }
+}

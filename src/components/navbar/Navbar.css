@@ -1,0 +1,42 @@
+#icon {
+  position: relative;
+  left: 35px;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#logo {
+  width: 250px;
+  height: auto;
+  margin-right: 80px;
+  position: relative;
+  right: 70px;
+}
+
+.cart-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 150px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.number-of-products {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  margin-left: -10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
