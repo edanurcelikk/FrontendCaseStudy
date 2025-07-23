@@ -162,33 +162,34 @@ function Product() {
           options={OPTIONS}
         />
       </div>
-      <div className="filter">
-        <Filter
-          brandOptions={brandOptions}
-          colorOptions={colorOptions}
-          sortOptions={OPTIONS}
-          selectedBrand={selectedBrand}
-          selectedColor={selectedColor}
-          selectedSort={sorting}
-          onBrandChange={(brand) => {
-            if (brand === selectedBrand) {
-              setSelectedBrand("");
-            } else {
-              setSelectedBrand(brand);
-            }
-          }}
-          onColorChange={(color) => {
-            if (color === selectedColor) {
-              setSelectedColor("");
-            } else {
-              setSelectedColor(color);
-            }
-          }}
-          onSortChange={handleSelect}
-          colorsCount={colorsCount}
-          brandCount={brandCount}
-        ></Filter>
-
+      <div className="filter-product-container">
+        <div className="filter">
+          <Filter
+            brandOptions={brandOptions}
+            colorOptions={colorOptions}
+            sortOptions={OPTIONS}
+            selectedBrand={selectedBrand}
+            selectedColor={selectedColor}
+            selectedSort={sorting}
+            onBrandChange={(brand) => {
+              if (brand === selectedBrand) {
+                setSelectedBrand("");
+              } else {
+                setSelectedBrand(brand);
+              }
+            }}
+            onColorChange={(color) => {
+              if (color === selectedColor) {
+                setSelectedColor("");
+              } else {
+                setSelectedColor(color);
+              }
+            }}
+            onSortChange={handleSelect}
+            colorsCount={colorsCount}
+            brandCount={brandCount}
+          ></Filter>
+        </div>
         <div className="products-container">
           {productsToShow.map((product) => (
             <div className="product-card" key={product.id}>
