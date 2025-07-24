@@ -10,6 +10,7 @@ function SearchInput() {
 
   return (
     <input
+      id="input"
       onChange={handleInputChange}
       className="navbar-input"
       placeholder="25 milyondan fazla ürün içerisinde ara"
