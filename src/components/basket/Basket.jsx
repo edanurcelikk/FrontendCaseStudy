@@ -19,7 +19,7 @@ function Basket() {
   };
 
   return (
-    <div>
+    <div className="basket-container">
       <Button className="cart-btn" onClick={showCart}>
         Sepetim
       </Button>
@@ -56,7 +56,17 @@ function Basket() {
         </div>
       ) : null}
 
-      {isDeleteModalOpen && <DeleteModal />}
+      {isDeleteModalOpen && (
+        <DeleteModal
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam omnis
+        eaque minima in dolores, est vel suscipit voluptatibus voluptates quo
+        quas amet temporibus quibusdam doloremque officiis aspernatur! Tenetur,
+        maxime aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.Totam omnis eaque minima in dolores."
+          confirmDeleteText="EVET"
+          cancelDeleteText="HAYIR"
+        />
+      )}
     </div>
   );
 }

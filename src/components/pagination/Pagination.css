@@ -2,6 +2,8 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  position: absolute;
+  left: 0;
 }
 .pagination-btn {
   padding: 8px 12px;

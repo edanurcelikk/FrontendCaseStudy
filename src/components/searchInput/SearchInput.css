@@ -8,8 +8,17 @@
   height: 40px;
   background-color: rgba(236, 236, 236, 255);
 }
+
+@media screen and (min-width: 1281px) {
+  .navbar-input {
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .navbar-input {
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar-input {
-    width: 8vw;
   }
 }

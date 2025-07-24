@@ -6,11 +6,14 @@
   flex-wrap: wrap;
   margin-left: 50px;
   justify-content: flex-start;
+  position: relative;
 }
 
 .pagination {
   width: max-content;
   margin-left: 200px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .product-card {
@@ -20,6 +23,7 @@
   width: 300px;
   height: 600px;
   border-radius: 10px;
+  margin-top: 50px;
 }
 .base-card {
   width: 100%;
@@ -80,6 +84,9 @@
 
 .filter-product-container {
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .search-container {
@@ -87,25 +94,8 @@
 }
 
 .no-product {
-  position: relative;
-  bottom: 630px;
-  left: 300px;
   width: max-content;
-}
-.select-container {
-  position: relative;
-  left: 620px;
-  bottom: 10px;
-  width: max-content;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .select-container {
-    left: 300px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .select-container {
-    left: 300px;
-  }
+  position: absolute;
+  top: 50px;
+  left: 100px;
 }

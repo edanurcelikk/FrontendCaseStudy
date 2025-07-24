@@ -8,31 +8,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-@media screen and (min-width: 1281px) {
-  .navbar-container {
-    width: 65%;
-    left: 50px;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .navbar-container {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .navbar-container {
-    width: 65%;
-    left: 150px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #logo {
   width: 250px;
   height: auto;
-  margin-right: 80px;
+
   position: relative;
   right: 70px;
 }
@@ -57,4 +40,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }

@@ -13,6 +13,7 @@ export const AppProvider = ({ children }) => {
 
   const [isDeleteModalOpen, setDeleteModalOpen] = useState(false); // modal
   const [itemToDelete, setItemToDelete] = useState(null); //silinecek ürün
+  const [productName, setProductName] = useState("");
 
   useEffect(() => {
     if (isToggleOpen && !isDeleteModalOpen) {
@@ -57,6 +58,7 @@ export const AppProvider = ({ children }) => {
   const requestDeleteItem = (product) => {
     setItemToDelete(product);
     setDeleteModalOpen(true);
+    setProductName(product.name);
   };
 
   const confirmDeleteItem = () => {
@@ -96,6 +98,8 @@ export const AppProvider = ({ children }) => {
         setToogleOpen,
         cartModalRef,
         handleClickOutside,
+        productName,
+        setProductName,
       }}
     >
       {children}

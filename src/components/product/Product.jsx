@@ -154,43 +154,41 @@ function Product() {
         ) : null}
       </div>
 
-      <div className="select-container">
-        <Select
-          value={sorting}
-          placeholder="Sıralama"
-          onChange={handleSelect}
-          options={OPTIONS}
-        />
-      </div>
       <div className="filter-product-container">
-        <div className="filter">
-          <Filter
-            brandOptions={brandOptions}
-            colorOptions={colorOptions}
-            sortOptions={OPTIONS}
-            selectedBrand={selectedBrand}
-            selectedColor={selectedColor}
-            selectedSort={sorting}
-            onBrandChange={(brand) => {
-              if (brand === selectedBrand) {
-                setSelectedBrand("");
-              } else {
-                setSelectedBrand(brand);
-              }
-            }}
-            onColorChange={(color) => {
-              if (color === selectedColor) {
-                setSelectedColor("");
-              } else {
-                setSelectedColor(color);
-              }
-            }}
-            onSortChange={handleSelect}
-            colorsCount={colorsCount}
-            brandCount={brandCount}
-          ></Filter>
-        </div>
+        <Filter
+          brandOptions={brandOptions}
+          colorOptions={colorOptions}
+          sortOptions={OPTIONS}
+          selectedBrand={selectedBrand}
+          selectedColor={selectedColor}
+          selectedSort={sorting}
+          onBrandChange={(brand) => {
+            if (brand === selectedBrand) {
+              setSelectedBrand("");
+            } else {
+              setSelectedBrand(brand);
+            }
+          }}
+          onColorChange={(color) => {
+            if (color === selectedColor) {
+              setSelectedColor("");
+            } else {
+              setSelectedColor(color);
+            }
+          }}
+          onSortChange={handleSelect}
+          colorsCount={colorsCount}
+          brandCount={brandCount}
+        ></Filter>
+
         <div className="products-container">
+          <Select
+            value={sorting}
+            placeholder="Sıralama"
+            onChange={handleSelect}
+            options={OPTIONS}
+          />
+
           {productsToShow.map((product) => (
             <div className="product-card" key={product.id}>
               <div className="base-card">
@@ -250,22 +248,22 @@ function Product() {
               </div>
             </div>
           ))}
+
+          {productsToShow.length > 0 ? (
+            <div className="pagination">
+              <Pagination
+                count={pageCount}
+                page={currentPage}
+                onChange={handleChange}
+              ></Pagination>
+            </div>
+          ) : (
+            <div className="no-product">
+              <p>Ürün bulunamadı.</p>
+            </div>
+          )}
         </div>
       </div>
-
-      {productsToShow.length > 0 ? (
-        <div className="pagination">
-          <Pagination
-            count={pageCount}
-            page={currentPage}
-            onChange={handleChange}
-          ></Pagination>
-        </div>
-      ) : (
-        <div className="no-product">
-          <p>Ürün bulunamadı.</p>
-        </div>
-      )}
     </>
   );
 }

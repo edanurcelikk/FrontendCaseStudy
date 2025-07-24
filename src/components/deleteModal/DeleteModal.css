@@ -1,4 +1,4 @@
-.delete-modal {
+.delete-modal-container {
   width: 400px;
   height: 300px;
   position: fixed;
@@ -10,7 +10,12 @@
   border-radius: 8px;
   border: 1px solid #ccc;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .deleteModal-btn {
   display: flex;
   gap: 10px;
@@ -37,7 +42,12 @@
 }
 .line {
   margin-top: 20px;
+  width: 400px;
 }
 .delete-modal-context {
   margin-top: 30px;
+}
+.context {
+  display: flex;
+  align-items: center;
 }
