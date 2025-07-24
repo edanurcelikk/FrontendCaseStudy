@@ -30,7 +30,6 @@ export const AppProvider = ({ children }) => {
     if (cartModalRef.current && !cartModalRef.current.contains(event.target)) {
       setToogleOpen(false);
     }
-
     //modalRef.current.contains(event.target) ile tıklamanın modalın dışında olup olmadığı kontrol edilir
   };
 
