@@ -5,6 +5,7 @@ function Select({ value, label, onChange, options = [], placeholder = "" }) {
     <div className="select-container">
       {label && <label className="label">{label}</label>}
       <select
+        key={value}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="select"
